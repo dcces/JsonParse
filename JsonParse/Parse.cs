@@ -20,6 +20,14 @@ namespace JsonParse
 
         private int RowCount { get; set; }
         public int DataCount = 0;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="inputstream"></param>
+        /// <param name="connstr">连接字符串</param>
+        /// <param name="TableName">表名</param>
+        /// <param name="Capacity">缓冲区大小</param>
+        /// <param name="encoding">编码</param>
         public Parse(Stream inputstream, string connstr, string TableName, int? Capacity = null, Encoding encoding = null)
         {
             inputstream.Seek(0, SeekOrigin.Begin);
